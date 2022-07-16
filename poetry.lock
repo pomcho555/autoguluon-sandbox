@@ -418,6 +418,28 @@ html5lib = ["html5lib"]
 lxml = ["lxml"]
 
 [[package]]
+name = "black"
+version = "22.6.0"
+description = "The uncompromising code formatter."
+category = "dev"
+optional = false
+python-versions = ">=3.6.2"
+
+[package.dependencies]
+click = ">=8.0.0"
+mypy-extensions = ">=0.4.3"
+pathspec = ">=0.9.0"
+platformdirs = ">=2"
+tomli = {version = ">=1.1.0", markers = "python_full_version < \"3.11.0a7\""}
+typing-extensions = {version = ">=3.10.0.0", markers = "python_version < \"3.10\""}
+
+[package.extras]
+colorama = ["colorama (>=0.4.3)"]
+d = ["aiohttp (>=3.7.4)"]
+jupyter = ["ipython (>=7.8.0)", "tokenize-rt (>=3.2.0)"]
+uvloop = ["uvloop (>=0.15.2)"]
+
+[[package]]
 name = "bleach"
 version = "5.0.1"
 description = "An easy safelist-based HTML-sanitizing tool."
@@ -1589,6 +1611,25 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "mypy-extensions"
+version = "0.4.3"
+description = "Experimental type system extensions for programs checked with the mypy typechecker."
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "nb-black"
+version = "1.0.7"
+description = "A simple extension for Jupyter Notebook and Jupyter Lab to beautify Python code automatically using Black."
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+ipython = "*"
+
+[[package]]
 name = "nbclassic"
 version = "0.4.3"
 description = "A web-based notebook environment for interactive computing"
@@ -1902,6 +1943,14 @@ toolz = "*"
 
 [package.extras]
 complete = ["numpy (>=1.9.0)", "pandas (>=0.19.0)", "pyzmq", "blosc"]
+
+[[package]]
+name = "pathspec"
+version = "0.9.0"
+description = "Utility library for gitignore style pattern matching of file paths."
+category = "dev"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 
 [[package]]
 name = "pathy"
@@ -3337,7 +3386,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "=3.9"
-content-hash = "79ad2c684f8423ba39e5d4f9078955e7d1d3f136dd310dd8cac8a82d70ee1fd4"
+content-hash = "b18efbda4fed6bec79e0b7db23e418017eab9818cb16022ec372c8a17a82171e"
 
 [metadata.files]
 absl-py = []
@@ -3371,6 +3420,7 @@ autogluon-contrib-nlp = []
 babel = []
 backcall = []
 beautifulsoup4 = []
+black = []
 bleach = []
 blis = []
 boto3 = []
@@ -3465,6 +3515,11 @@ mistune = []
 msgpack = []
 multidict = []
 murmurhash = []
+mypy-extensions = [
+    {file = "mypy_extensions-0.4.3-py2.py3-none-any.whl", hash = "sha256:090fedd75945a69ae91ce1303b5824f428daf5a028d2f6ab8a299250a846f15d"},
+    {file = "mypy_extensions-0.4.3.tar.gz", hash = "sha256:2d82818f5bb3e369420cb3c4060a7970edba416647068eb4c5343488a6c604a8"},
+]
+nb-black = []
 nbclassic = []
 nbclient = []
 nbconvert = []
@@ -3488,6 +3543,10 @@ pandas = []
 pandocfilters = []
 parso = []
 partd = []
+pathspec = [
+    {file = "pathspec-0.9.0-py2.py3-none-any.whl", hash = "sha256:7d15c4ddb0b5c802d161efc417ec1a2558ea2653c2e8ad9c19098201dc1c993a"},
+    {file = "pathspec-0.9.0.tar.gz", hash = "sha256:e564499435a2673d586f6b2130bb5b95f04a3ba06f81b8f895b651a3c76aabb1"},
+]
 pathy = []
 patsy = []
 pexpect = []
