@@ -2,12 +2,13 @@
 name = "autoguluon-sandbox"
 version = "0.1.0"
 description = ""
-authors = ["pomcho555 <ono.fda03@gmail.com>"]
+authors = ["pomcho555"]
 
 [tool.poetry.dependencies]
-python = "=3.9"
+python = "=3.7"
 autogluon = "^0.5.0"
 jupyterlab = "^3.4.3"
+sagemaker = "^2.99.0"
 
 [tool.poetry.dev-dependencies]
 nb-black = "^1.0.7"
